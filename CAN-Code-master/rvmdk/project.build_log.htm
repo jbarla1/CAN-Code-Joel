@@ -1,0 +1,659 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.24.2.0
+Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Joel Barla, Lawrence Tech, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.24.1
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 5 (build 528)
+Assembler:       Armasm.exe V5.06 update 5 (build 528)
+Linker/Locator:  ArmLink.exe V5.06 update 5 (build 528)
+Library Manager: ArmAr.exe V5.06 update 5 (build 528)
+Hex Converter:   FromElf.exe V5.06 update 5 (build 528)
+CPU DLL:         SARMCM3.DLL V5.24.1
+Dialog DLL:      DCM.DLL V1.16.0.0
+Target DLL:      lmidk-agdi.dll V???
+Dialog DLL:      TCM.DLL V1.32.0.0
+ 
+<h2>Project:</h2>
+C:\Users\jbarla1\Downloads\CAN-Code-master\CAN-Code-master\project.uvprojx
+Project File Date:  12/04/2017
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 5 (build 528)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'project'
+creating preprocessor file for project.c...
+assembling startup_rvmdk.S...
+creating preprocessor file for Systic.c...
+creating preprocessor file for Uart_helper.c...
+compiling Uart_helper.c...
+src\Uart_helper.c(68): warning:  #1-D: last line of file ends without a newline
+  // this function does the same thing as UartSetup(), but uses direct register access method
+src\Uart_helper.c: 1 warning, 0 errors
+compiling project.c...
+driverlib/hibernate.h(229): warning:  #231-D: declaration is not visible outside of function
+  extern void HibernateCalendarSet(struct tm *psTime);
+driverlib/hibernate.h(230): warning:  #231-D: declaration is not visible outside of function
+  extern int HibernateCalendarGet(struct tm *psTime);
+driverlib/hibernate.h(231): warning:  #231-D: declaration is not visible outside of function
+  extern void HibernateCalendarMatchSet(uint32_t ui32Index, struct tm *psTime);
+driverlib/hibernate.h(232): warning:  #231-D: declaration is not visible outside of function
+  extern void HibernateCalendarMatchGet(uint32_t ui32Index, struct tm *psTime);
+inc/hw_ints.h(352): warning:  #47-D: incompatible redefinition of macro "INT_ADC0SS0"  (declared at line 62 of ".\inc\tm4c123gh6pm.h")
+  #define INT_ADC0SS0             INT_CONCAT(INT_ADC0SS0_, INT_DEVICE_CLASS)
+inc/hw_ints.h(353): warning:  #47-D: incompatible redefinition of macro "INT_ADC0SS1"  (declared at line 63 of ".\inc\tm4c123gh6pm.h")
+  #define INT_ADC0SS1             INT_CONCAT(INT_ADC0SS1_, INT_DEVICE_CLASS)
+inc/hw_ints.h(354): warning:  #47-D: incompatible redefinition of macro "INT_ADC0SS2"  (declared at line 64 of ".\inc\tm4c123gh6pm.h")
+  #define INT_ADC0SS2             INT_CONCAT(INT_ADC0SS2_, INT_DEVICE_CLASS)
+inc/hw_ints.h(355): warning:  #47-D: incompatible redefinition of macro "INT_ADC0SS3"  (declared at line 65 of ".\inc\tm4c123gh6pm.h")
+  #define INT_ADC0SS3             INT_CONCAT(INT_ADC0SS3_, INT_DEVICE_CLASS)
+inc/hw_ints.h(356): warning:  #47-D: incompatible redefinition of macro "INT_ADC1SS0"  (declared at line 92 of ".\inc\tm4c123gh6pm.h")
+  #define INT_ADC1SS0             INT_CONCAT(INT_ADC1SS0_, INT_DEVICE_CLASS)
+inc/hw_ints.h(357): warning:  #47-D: incompatible redefinition of macro "INT_ADC1SS1"  (declared at line 93 of ".\inc\tm4c123gh6pm.h")
+  #define INT_ADC1SS1             INT_CONCAT(INT_ADC1SS1_, INT_DEVICE_CLASS)
+inc/hw_ints.h(358): warning:  #47-D: incompatible redefinition of macro "INT_ADC1SS2"  (declared at line 94 of ".\inc\tm4c123gh6pm.h")
+  #define INT_ADC1SS2             INT_CONCAT(INT_ADC1SS2_, INT_DEVICE_CLASS)
+inc/hw_ints.h(359): warning:  #47-D: incompatible redefinition of macro "INT_ADC1SS3"  (declared at line 95 of ".\inc\tm4c123gh6pm.h")
+  #define INT_ADC1SS3             INT_CONCAT(INT_ADC1SS3_, INT_DEVICE_CLASS)
+inc/hw_ints.h(361): warning:  #47-D: incompatible redefinition of macro "INT_CAN0"  (declared at line 85 of ".\inc\tm4c123gh6pm.h")
+  #define INT_CAN0                INT_CONCAT(INT_CAN0_, INT_DEVICE_CLASS)
+inc/hw_ints.h(362): warning:  #47-D: incompatible redefinition of macro "INT_CAN1"  (declared at line 86 of ".\inc\tm4c123gh6pm.h")
+  #define INT_CAN1                INT_CONCAT(INT_CAN1_, INT_DEVICE_CLASS)
+inc/hw_ints.h(363): warning:  #47-D: incompatible redefinition of macro "INT_COMP0"  (declared at line 73 of ".\inc\tm4c123gh6pm.h")
+  #define INT_COMP0               INT_CONCAT(INT_COMP0_, INT_DEVICE_CLASS)
+inc/hw_ints.h(364): warning:  #47-D: incompatible redefinition of macro "INT_COMP1"  (declared at line 74 of ".\inc\tm4c123gh6pm.h")
+  #define INT_COMP1               INT_CONCAT(INT_COMP1_, INT_DEVICE_CLASS)
+inc/hw_ints.h(369): warning:  #47-D: incompatible redefinition of macro "INT_FLASH"  (declared at line 76 of ".\inc\tm4c123gh6pm.h")
+  #define INT_FLASH               INT_CONCAT(INT_FLASH_, INT_DEVICE_CLASS)
+inc/hw_ints.h(370): warning:  #47-D: incompatible redefinition of macro "INT_GPIOA"  (declared at line 48 of ".\inc\tm4c123gh6pm.h")
+  #define INT_GPIOA               INT_CONCAT(INT_GPIOA_, INT_DEVICE_CLASS)
+inc/hw_ints.h(371): warning:  #47-D: incompatible redefinition of macro "INT_GPIOB"  (declared at line 49 of ".\inc\tm4c123gh6pm.h")
+  #define INT_GPIOB               INT_CONCAT(INT_GPIOB_, INT_DEVICE_CLASS)
+inc/hw_ints.h(372): warning:  #47-D: incompatible redefinition of macro "INT_GPIOC"  (declared at line 50 of ".\inc\tm4c123gh6pm.h")
+  #define INT_GPIOC               INT_CONCAT(INT_GPIOC_, INT_DEVICE_CLASS)
+inc/hw_ints.h(373): warning:  #47-D: incompatible redefinition of macro "INT_GPIOD"  (declared at line 51 of ".\inc\tm4c123gh6pm.h")
+  #define INT_GPIOD               INT_CONCAT(INT_GPIOD_, INT_DEVICE_CLASS)
+inc/hw_ints.h(374): warning:  #47-D: incompatible redefinition of macro "INT_GPIOE"  (declared at line 52 of ".\inc\tm4c123gh6pm.h")
+  #define INT_GPIOE               INT_CONCAT(INT_GPIOE_, INT_DEVICE_CLASS)
+inc/hw_ints.h(375): warning:  #47-D: incompatible redefinition of macro "INT_GPIOF"  (declared at line 78 of ".\inc\tm4c123gh6pm.h")
+  #define INT_GPIOF               INT_CONCAT(INT_GPIOF_, INT_DEVICE_CLASS)
+inc/hw_ints.h(402): warning:  #47-D: incompatible redefinition of macro "INT_HIBERNATE"  (declared at line 87 of ".\inc\tm4c123gh6pm.h")
+  #define INT_HIBERNATE           INT_CONCAT(INT_HIBERNATE_, INT_DEVICE_CLASS)
+inc/hw_ints.h(403): warning:  #47-D: incompatible redefinition of macro "INT_I2C0"  (declared at line 56 of ".\inc\tm4c123gh6pm.h")
+  #define INT_I2C0                INT_CONCAT(INT_I2C0_, INT_DEVICE_CLASS)
+inc/hw_ints.h(404): warning:  #47-D: incompatible redefinition of macro "INT_I2C1"  (declared at line 83 of ".\inc\tm4c123gh6pm.h")
+  #define INT_I2C1                INT_CONCAT(INT_I2C1_, INT_DEVICE_CLASS)
+inc/hw_ints.h(405): warning:  #47-D: incompatible redefinition of macro "INT_I2C2"  (declared at line 103 of ".\inc\tm4c123gh6pm.h")
+  #define INT_I2C2                INT_CONCAT(INT_I2C2_, INT_DEVICE_CLASS)
+inc/hw_ints.h(406): warning:  #47-D: incompatible redefinition of macro "INT_I2C3"  (declared at line 104 of ".\inc\tm4c123gh6pm.h")
+  #define INT_I2C3                INT_CONCAT(INT_I2C3_, INT_DEVICE_CLASS)
+inc/hw_ints.h(415): warning:  #47-D: incompatible redefinition of macro "INT_PWM0_0"  (declared at line 58 of ".\inc\tm4c123gh6pm.h")
+  #define INT_PWM0_0              INT_CONCAT(INT_PWM0_0_, INT_DEVICE_CLASS)
+inc/hw_ints.h(416): warning:  #47-D: incompatible redefinition of macro "INT_PWM0_1"  (declared at line 59 of ".\inc\tm4c123gh6pm.h")
+  #define INT_PWM0_1              INT_CONCAT(INT_PWM0_1_, INT_DEVICE_CLASS)
+inc/hw_ints.h(417): warning:  #47-D: incompatible redefinition of macro "INT_PWM0_2"  (declared at line 60 of ".\inc\tm4c123gh6pm.h")
+  #define INT_PWM0_2              INT_CONCAT(INT_PWM0_2_, INT_DEVICE_CLASS)
+inc/hw_ints.h(418): warning:  #47-D: incompatible redefinition of macro "INT_PWM0_3"  (declared at line 89 of ".\inc\tm4c123gh6pm.h")
+  #define INT_PWM0_3              INT_CONCAT(INT_PWM0_3_, INT_DEVICE_CLASS)
+inc/hw_ints.h(419): warning:  #47-D: incompatible redefinition of macro "INT_PWM0_FAULT"  (declared at line 57 of ".\inc\tm4c123gh6pm.h")
+  #define INT_PWM0_FAULT          INT_CONCAT(INT_PWM0_FAULT_, INT_DEVICE_CLASS)
+inc/hw_ints.h(420): warning:  #47-D: incompatible redefinition of macro "INT_PWM1_0"  (declared at line 122 of ".\inc\tm4c123gh6pm.h")
+  #define INT_PWM1_0              INT_CONCAT(INT_PWM1_0_, INT_DEVICE_CLASS)
+inc/hw_ints.h(421): warning:  #47-D: incompatible redefinition of macro "INT_PWM1_1"  (declared at line 123 of ".\inc\tm4c123gh6pm.h")
+  #define INT_PWM1_1              INT_CONCAT(INT_PWM1_1_, INT_DEVICE_CLASS)
+inc/hw_ints.h(422): warning:  #47-D: incompatible redefinition of macro "INT_PWM1_2"  (declared at line 124 of ".\inc\tm4c123gh6pm.h")
+  #define INT_PWM1_2              INT_CONCAT(INT_PWM1_2_, INT_DEVICE_CLASS)
+inc/hw_ints.h(423): warning:  #47-D: incompatible redefinition of macro "INT_PWM1_3"  (declared at line 125 of ".\inc\tm4c123gh6pm.h")
+  #define INT_PWM1_3              INT_CONCAT(INT_PWM1_3_, INT_DEVICE_CLASS)
+inc/hw_ints.h(424): warning:  #47-D: incompatible redefinition of macro "INT_PWM1_FAULT"  (declared at line 126 of ".\inc\tm4c123gh6pm.h")
+  #define INT_PWM1_FAULT          INT_CONCAT(INT_PWM1_FAULT_, INT_DEVICE_CLASS)
+inc/hw_ints.h(425): warning:  #47-D: incompatible redefinition of macro "INT_QEI0"  (declared at line 61 of ".\inc\tm4c123gh6pm.h")
+  #define INT_QEI0                INT_CONCAT(INT_QEI0_, INT_DEVICE_CLASS)
+inc/hw_ints.h(426): warning:  #47-D: incompatible redefinition of macro "INT_QEI1"  (declared at line 84 of ".\inc\tm4c123gh6pm.h")
+  #define INT_QEI1                INT_CONCAT(INT_QEI1_, INT_DEVICE_CLASS)
+inc/hw_ints.h(428): warning:  #47-D: incompatible redefinition of macro "INT_SSI0"  (declared at line 55 of ".\inc\tm4c123gh6pm.h")
+  #define INT_SSI0                INT_CONCAT(INT_SSI0_, INT_DEVICE_CLASS)
+inc/hw_ints.h(429): warning:  #47-D: incompatible redefinition of macro "INT_SSI1"  (declared at line 80 of ".\inc\tm4c123gh6pm.h")
+  #define INT_SSI1                INT_CONCAT(INT_SSI1_, INT_DEVICE_CLASS)
+inc/hw_ints.h(430): warning:  #47-D: incompatible redefinition of macro "INT_SSI2"  (declared at line 96 of ".\inc\tm4c123gh6pm.h")
+  #define INT_SSI2                INT_CONCAT(INT_SSI2_, INT_DEVICE_CLASS)
+inc/hw_ints.h(431): warning:  #47-D: incompatible redefinition of macro "INT_SSI3"  (declared at line 97 of ".\inc\tm4c123gh6pm.h")
+  #define INT_SSI3                INT_CONCAT(INT_SSI3_, INT_DEVICE_CLASS)
+inc/hw_ints.h(432): warning:  #47-D: incompatible redefinition of macro "INT_SYSCTL"  (declared at line 75 of ".\inc\tm4c123gh6pm.h")
+  #define INT_SYSCTL              INT_CONCAT(INT_SYSCTL_, INT_DEVICE_CLASS)
+inc/hw_ints.h(433): warning:  #47-D: incompatible redefinition of macro "INT_SYSEXC"  (declared at line 121 of ".\inc\tm4c123gh6pm.h")
+  #define INT_SYSEXC              INT_CONCAT(INT_SYSEXC_, INT_DEVICE_CLASS)
+inc/hw_ints.h(474): warning:  #47-D: incompatible redefinition of macro "INT_WTIMER5B"  (declared at line 120 of ".\inc\tm4c123gh6pm.h")
+  #define INT_WTIMER5B            INT_CONCAT(INT_WTIMER5B_, INT_DEVICE_CLASS)
+project.c(112): warning:  #223-D: function "ClockSetup" declared implicitly
+  		ClockSetup();
+project.c(113): warning:  #223-D: function "GPIO_Setup" declared implicitly
+  		GPIO_Setup();
+project.c: 84 warnings, 0 errors
+  #define INT_TIMER1A             INT_CONCAT(INT_TIMER1A_, INT_DEVICE_CLASS)
+inc/hw_ints.h(438): warning:  #47-D: incompatible redefinition of macro "INT_TIMER1B"  (declared at line 70 of ".\inc\tm4c123gh6pm.h")
+  #define INT_TIMER1B             INT_CONCAT(INT_TIMER1B_, INT_DEVICE_CLASS)
+inc/hw_ints.h(439): warning:  #47-D: incompatible redefinition of macro "INT_TIMER2A"  (declared at line 71 of ".\inc\tm4c123gh6pm.h")
+  #define INT_TIMER2A             INT_CONCAT(INT_TIMER2A_, INT_DEVICE_CLASS)
+inc/hw_ints.h(440): warning:  #47-D: incompatible redefinition of macro "INT_TIMER2B"  (declared at line 72 of ".\inc\tm4c123gh6pm.h")
+  #define INT_TIMER2B             INT_CONCAT(INT_TIMER2B_, INT_DEVICE_CLASS)
+inc/hw_ints.h(441): warning:  #47-D: incompatible redefinition of macro "INT_TIMER3A"  (declared at line 81 of ".\inc\tm4c123gh6pm.h")
+  #define INT_TIMER3A             INT_CONCAT(INT_TIMER3A_, INT_DEVICE_CLASS)
+inc/hw_ints.h(442): warning:  #47-D: incompatible redefinition of macro "INT_TIMER3B"  (declared at line 82 of ".\inc\tm4c123gh6pm.h")
+  #define INT_TIMER3B             INT_CONCAT(INT_TIMER3B_, INT_DEVICE_CLASS)
+inc/hw_ints.h(443): warning:  #47-D: incompatible redefinition of macro "INT_TIMER4A"  (declared at line 105 of ".\inc\tm4c123gh6pm.h")
+  #define INT_TIMER4A             INT_CONCAT(INT_TIMER4A_, INT_DEVICE_CLASS)
+inc/hw_ints.h(444): warning:  #47-D: incompatible redefinition of macro "INT_TIMER4B"  (declared at line 106 of ".\inc\tm4c123gh6pm.h")
+  #define INT_TIMER4B             INT_CONCAT(INT_TIMER4B_, INT_DEVICE_CLASS)
+inc/hw_ints.h(445): warning:  #47-D: incompatible redefinition of macro "INT_TIMER5A"  (declared at line 107 of ".\inc\tm4c123gh6pm.h")
+  #define INT_TIMER5A             INT_CONCAT(INT_TIMER5A_, INT_DEVICE_CLASS)
+inc/hw_ints.h(446): warning:  #47-D: incompatible redefinition of macro "INT_TIMER5B"  (declared at line 108 of ".\inc\tm4c123gh6pm.h")
+  #define INT_TIMER5B             INT_CONCAT(INT_TIMER5B_, INT_DEVICE_CLASS)
+inc/hw_ints.h(451): warning:  #47-D: incompatible redefinition of macro "INT_UART0"  (declared at line 53 of ".\inc\tm4c123gh6pm.h")
+  #define INT_UART0               INT_CONCAT(INT_UART0_, INT_DEVICE_CLASS)
+inc/hw_ints.h(452): warning:  #47-D: incompatible redefinition of macro "INT_UART1"  (declared at line 54 of ".\inc\tm4c123gh6pm.h")
+  #define INT_UART1               INT_CONCAT(INT_UART1_, INT_DEVICE_CLASS)
+inc/hw_ints.h(453): warning:  #47-D: incompatible redefinition of macro "INT_UART2"  (declared at line 79 of ".\inc\tm4c123gh6pm.h")
+  #define INT_UART2               INT_CONCAT(INT_UART2_, INT_DEVICE_CLASS)
+inc/hw_ints.h(454): warning:  #47-D: incompatible redefinition of macro "INT_UART3"  (declared at line 98 of ".\inc\tm4c123gh6pm.h")
+  #define INT_UART3               INT_CONCAT(INT_UART3_, INT_DEVICE_CLASS)
+inc/hw_ints.h(455): warning:  #47-D: incompatible redefinition of macro "INT_UART4"  (declared at line 99 of ".\inc\tm4c123gh6pm.h")
+  #define INT_UART4               INT_CONCAT(INT_UART4_, INT_DEVICE_CLASS)
+inc/hw_ints.h(456): warning:  #47-D: incompatible redefinition of macro "INT_UART5"  (declared at line 100 of ".\inc\tm4c123gh6pm.h")
+  #define INT_UART5               INT_CONCAT(INT_UART5_, INT_DEVICE_CLASS)
+inc/hw_ints.h(457): warning:  #47-D: incompatible redefinition of macro "INT_UART6"  (declared at line 101 of ".\inc\tm4c123gh6pm.h")
+  #define INT_UART6               INT_CONCAT(INT_UART6_, INT_DEVICE_CLASS)
+inc/hw_ints.h(458): warning:  #47-D: incompatible redefinition of macro "INT_UART7"  (declared at line 102 of ".\inc\tm4c123gh6pm.h")
+  #define INT_UART7               INT_CONCAT(INT_UART7_, INT_DEVICE_CLASS)
+inc/hw_ints.h(459): warning:  #47-D: incompatible redefinition of macro "INT_UDMA"  (declared at line 90 of ".\inc\tm4c123gh6pm.h")
+  #define INT_UDMA                INT_CONCAT(INT_UDMA_, INT_DEVICE_CLASS)
+inc/hw_ints.h(460): warning:  #47-D: incompatible redefinition of macro "INT_UDMAERR"  (declared at line 91 of ".\inc\tm4c123gh6pm.h")
+  #define INT_UDMAERR             INT_CONCAT(INT_UDMAERR_, INT_DEVICE_CLASS)
+inc/hw_ints.h(461): warning:  #47-D: incompatible redefinition of macro "INT_USB0"  (declared at line 88 of ".\inc\tm4c123gh6pm.h")
+  #define INT_USB0                INT_CONCAT(INT_USB0_, INT_DEVICE_CLASS)
+inc/hw_ints.h(462): warning:  #47-D: incompatible redefinition of macro "INT_WATCHDOG"  (declared at line 66 of ".\inc\tm4c123gh6pm.h")
+  #define INT_WATCHDOG            INT_CONCAT(INT_WATCHDOG_, INT_DEVICE_CLASS)
+inc/hw_ints.h(463): warning:  #47-D: incompatible redefinition of macro "INT_WTIMER0A"  (declared at line 109 of ".\inc\tm4c123gh6pm.h")
+  #define INT_WTIMER0A            INT_CONCAT(INT_WTIMER0A_, INT_DEVICE_CLASS)
+inc/hw_ints.h(464): warning:  #47-D: incompatible redefinition of macro "INT_WTIMER0B"  (declared at line 110 of ".\inc\tm4c123gh6pm.h")
+  #define INT_WTIMER0B            INT_CONCAT(INT_WTIMER0B_, INT_DEVICE_CLASS)
+inc/hw_ints.h(465): warning:  #47-D: incompatible redefinition of macro "INT_WTIMER1A"  (declared at line 111 of ".\inc\tm4c123gh6pm.h")
+  #define INT_WTIMER1A            INT_CONCAT(INT_WTIMER1A_, INT_DEVICE_CLASS)
+inc/hw_ints.h(466): warning:  #47-D: incompatible redefinition of macro "INT_WTIMER1B"  (declared at line 112 of ".\inc\tm4c123gh6pm.h")
+  #define INT_WTIMER1B            INT_CONCAT(INT_WTIMER1B_, INT_DEVICE_CLASS)
+inc/hw_ints.h(467): warning:  #47-D: incompatible redefinition of macro "INT_WTIMER2A"  (declared at line 113 of ".\inc\tm4c123gh6pm.h")
+  #define INT_WTIMER2A            INT_CONCAT(INT_WTIMER2A_, INT_DEVICE_CLASS)
+inc/hw_ints.h(468): warning:  #47-D: incompatible redefinition of macro "INT_WTIMER2B"  (declared at line 114 of ".\inc\tm4c123gh6pm.h")
+  #define INT_WTIMER2B            INT_CONCAT(INT_WTIMER2B_, INT_DEVICE_CLASS)
+inc/hw_ints.h(469): warning:  #47-D: incompatible redefinition of macro "INT_WTIMER3A"  (declared at line 115 of ".\inc\tm4c123gh6pm.h")
+  #define INT_WTIMER3A            INT_CONCAT(INT_WTIMER3A_, INT_DEVICE_CLASS)
+inc/hw_ints.h(470): warning:  #47-D: incompatible redefinition of macro "INT_WTIMER3B"  (declared at line 116 of ".\inc\tm4c123gh6pm.h")
+  #define INT_WTIMER3B            INT_CONCAT(INT_WTIMER3B_, INT_DEVICE_CLASS)
+inc/hw_ints.h(471): warning:  #47-D: incompatible redefinition of macro "INT_WTIMER4A"  (declared at line 117 of ".\inc\tm4c123gh6pm.h")
+  #define INT_WTIMER4A            INT_CONCAT(INT_WTIMER4A_, INT_DEVICE_CLASS)
+inc/hw_ints.h(472): warning:  #47-D: incompatible redefinition of macro "INT_WTIMER4B"  (declared at line 118 of ".\inc\tm4c123gh6pm.h")
+  #define INT_WTIMER4B            INT_CONCAT(INT_WTIMER4B_, INT_DEVICE_CLASS)
+inc/hw_ints.h(473): warning:  #47-D: incompatible redefinition of macro "INT_WTIMER5A"  (declared at line 119 of ".\inc\tm4c123gh6pm.h")
+  #define INT_WTIMER5A            INT_CONCAT(INT_WTIMER5A_, INT_DEVICE_CLASS)
+compiling Systic.c...
+driverlib/hibernate.h(229): warning:  #231-D: declaration is not visible outside of function
+  extern void HibernateCalendarSet(struct tm *psTime);
+driverlib/hibernate.h(230): warning:  #231-D: declaration is not visible outside of function
+  extern int HibernateCalendarGet(struct tm *psTime);
+driverlib/hibernate.h(231): warning:  #231-D: declaration is not visible outside of function
+  extern void HibernateCalendarMatchSet(uint32_t ui32Index, struct tm *psTime);
+driverlib/hibernate.h(232): warning:  #231-D: declaration is not visible outside of function
+  extern void HibernateCalendarMatchGet(uint32_t ui32Index, struct tm *psTime);
+inc/hw_ints.h(352): warning:  #47-D: incompatible redefinition of macro "INT_ADC0SS0"  (declared at line 62 of ".\inc\tm4c123gh6pm.h")
+  #define INT_ADC0SS0             INT_CONCAT(INT_ADC0SS0_, INT_DEVICE_CLASS)
+inc/hw_ints.h(353): warning:  #47-D: incompatible redefinition of macro "INT_ADC0SS1"  (declared at line 63 of ".\inc\tm4c123gh6pm.h")
+  #define INT_ADC0SS1             INT_CONCAT(INT_ADC0SS1_, INT_DEVICE_CLASS)
+inc/hw_ints.h(354): warning:  #47-D: incompatible redefinition of macro "INT_ADC0SS2"  (declared at line 64 of ".\inc\tm4c123gh6pm.h")
+  #define INT_ADC0SS2             INT_CONCAT(INT_ADC0SS2_, INT_DEVICE_CLASS)
+inc/hw_ints.h(355): warning:  #47-D: incompatible redefinition of macro "INT_ADC0SS3"  (declared at line 65 of ".\inc\tm4c123gh6pm.h")
+  #define INT_ADC0SS3             INT_CONCAT(INT_ADC0SS3_, INT_DEVICE_CLASS)
+inc/hw_ints.h(356): warning:  #47-D: incompatible redefinition of macro "INT_ADC1SS0"  (declared at line 92 of ".\inc\tm4c123gh6pm.h")
+  #define INT_ADC1SS0             INT_CONCAT(INT_ADC1SS0_, INT_DEVICE_CLASS)
+inc/hw_ints.h(357): warning:  #47-D: incompatible redefinition of macro "INT_ADC1SS1"  (declared at line 93 of ".\inc\tm4c123gh6pm.h")
+  #define INT_ADC1SS1             INT_CONCAT(INT_ADC1SS1_, INT_DEVICE_CLASS)
+inc/hw_ints.h(358): warning:  #47-D: incompatible redefinition of macro "INT_ADC1SS2"  (declared at line 94 of ".\inc\tm4c123gh6pm.h")
+  #define INT_ADC1SS2             INT_CONCAT(INT_ADC1SS2_, INT_DEVICE_CLASS)
+inc/hw_ints.h(359): warning:  #47-D: incompatible redefinition of macro "INT_ADC1SS3"  (declared at line 95 of ".\inc\tm4c123gh6pm.h")
+  #define INT_ADC1SS3             INT_CONCAT(INT_ADC1SS3_, INT_DEVICE_CLASS)
+inc/hw_ints.h(361): warning:  #47-D: incompatible redefinition of macro "INT_CAN0"  (declared at line 85 of ".\inc\tm4c123gh6pm.h")
+  #define INT_CAN0                INT_CONCAT(INT_CAN0_, INT_DEVICE_CLASS)
+inc/hw_ints.h(362): warning:  #47-D: incompatible redefinition of macro "INT_CAN1"  (declared at line 86 of ".\inc\tm4c123gh6pm.h")
+  #define INT_CAN1                INT_CONCAT(INT_CAN1_, INT_DEVICE_CLASS)
+inc/hw_ints.h(363): warning:  #47-D: incompatible redefinition of macro "INT_COMP0"  (declared at line 73 of ".\inc\tm4c123gh6pm.h")
+  #define INT_COMP0               INT_CONCAT(INT_COMP0_, INT_DEVICE_CLASS)
+inc/hw_ints.h(364): warning:  #47-D: incompatible redefinition of macro "INT_COMP1"  (declared at line 74 of ".\inc\tm4c123gh6pm.h")
+  #define INT_COMP1               INT_CONCAT(INT_COMP1_, INT_DEVICE_CLASS)
+inc/hw_ints.h(369): warning:  #47-D: incompatible redefinition of macro "INT_FLASH"  (declared at line 76 of ".\inc\tm4c123gh6pm.h")
+  #define INT_FLASH               INT_CONCAT(INT_FLASH_, INT_DEVICE_CLASS)
+inc/hw_ints.h(370): warning:  #47-D: incompatible redefinition of macro "INT_GPIOA"  (declared at line 48 of ".\inc\tm4c123gh6pm.h")
+  #define INT_GPIOA               INT_CONCAT(INT_GPIOA_, INT_DEVICE_CLASS)
+inc/hw_ints.h(371): warning:  #47-D: incompatible redefinition of macro "INT_GPIOB"  (declared at line 49 of ".\inc\tm4c123gh6pm.h")
+  #define INT_GPIOB               INT_CONCAT(INT_GPIOB_, INT_DEVICE_CLASS)
+inc/hw_ints.h(372): warning:  #47-D: incompatible redefinition of macro "INT_GPIOC"  (declared at line 50 of ".\inc\tm4c123gh6pm.h")
+  #define INT_GPIOC               INT_CONCAT(INT_GPIOC_, INT_DEVICE_CLASS)
+inc/hw_ints.h(373): warning:  #47-D: incompatible redefinition of macro "INT_GPIOD"  (declared at line 51 of ".\inc\tm4c123gh6pm.h")
+  #define INT_GPIOD               INT_CONCAT(INT_GPIOD_, INT_DEVICE_CLASS)
+inc/hw_ints.h(374): warning:  #47-D: incompatible redefinition of macro "INT_GPIOE"  (declared at line 52 of ".\inc\tm4c123gh6pm.h")
+  #define INT_GPIOE               INT_CONCAT(INT_GPIOE_, INT_DEVICE_CLASS)
+inc/hw_ints.h(375): warning:  #47-D: incompatible redefinition of macro "INT_GPIOF"  (declared at line 78 of ".\inc\tm4c123gh6pm.h")
+  #define INT_GPIOF               INT_CONCAT(INT_GPIOF_, INT_DEVICE_CLASS)
+inc/hw_ints.h(402): warning:  #47-D: incompatible redefinition of macro "INT_HIBERNATE"  (declared at line 87 of ".\inc\tm4c123gh6pm.h")
+  #define INT_HIBERNATE           INT_CONCAT(INT_HIBERNATE_, INT_DEVICE_CLASS)
+inc/hw_ints.h(403): warning:  #47-D: incompatible redefinition of macro "INT_I2C0"  (declared at line 56 of ".\inc\tm4c123gh6pm.h")
+  #define INT_I2C0                INT_CONCAT(INT_I2C0_, INT_DEVICE_CLASS)
+inc/hw_ints.h(404): warning:  #47-D: incompatible redefinition of macro "INT_I2C1"  (declared at line 83 of ".\inc\tm4c123gh6pm.h")
+  #define INT_I2C1                INT_CONCAT(INT_I2C1_, INT_DEVICE_CLASS)
+inc/hw_ints.h(405): warning:  #47-D: incompatible redefinition of macro "INT_I2C2"  (declared at line 103 of ".\inc\tm4c123gh6pm.h")
+  #define INT_I2C2                INT_CONCAT(INT_I2C2_, INT_DEVICE_CLASS)
+inc/hw_ints.h(406): warning:  #47-D: incompatible redefinition of macro "INT_I2C3"  (declared at line 104 of ".\inc\tm4c123gh6pm.h")
+  #define INT_I2C3                INT_CONCAT(INT_I2C3_, INT_DEVICE_CLASS)
+inc/hw_ints.h(415): warning:  #47-D: incompatible redefinition of macro "INT_PWM0_0"  (declared at line 58 of ".\inc\tm4c123gh6pm.h")
+  #define INT_PWM0_0              INT_CONCAT(INT_PWM0_0_, INT_DEVICE_CLASS)
+inc/hw_ints.h(416): warning:  #47-D: incompatible redefinition of macro "INT_PWM0_1"  (declared at line 59 of ".\inc\tm4c123gh6pm.h")
+  #define INT_PWM0_1              INT_CONCAT(INT_PWM0_1_, INT_DEVICE_CLASS)
+inc/hw_ints.h(417): warning:  #47-D: incompatible redefinition of macro "INT_PWM0_2"  (declared at line 60 of ".\inc\tm4c123gh6pm.h")
+  #define INT_PWM0_2              INT_CONCAT(INT_PWM0_2_, INT_DEVICE_CLASS)
+inc/hw_ints.h(418): warning:  #47-D: incompatible redefinition of macro "INT_PWM0_3"  (declared at line 89 of ".\inc\tm4c123gh6pm.h")
+  #define INT_PWM0_3              INT_CONCAT(INT_PWM0_3_, INT_DEVICE_CLASS)
+inc/hw_ints.h(419): warning:  #47-D: incompatible redefinition of macro "INT_PWM0_FAULT"  (declared at line 57 of ".\inc\tm4c123gh6pm.h")
+  #define INT_PWM0_FAULT          INT_CONCAT(INT_PWM0_FAULT_, INT_DEVICE_CLASS)
+inc/hw_ints.h(420): warning:  #47-D: incompatible redefinition of macro "INT_PWM1_0"  (declared at line 122 of ".\inc\tm4c123gh6pm.h")
+  #define INT_PWM1_0              INT_CONCAT(INT_PWM1_0_, INT_DEVICE_CLASS)
+inc/hw_ints.h(421): warning:  #47-D: incompatible redefinition of macro "INT_PWM1_1"  (declared at line 123 of ".\inc\tm4c123gh6pm.h")
+  #define INT_PWM1_1              INT_CONCAT(INT_PWM1_1_, INT_DEVICE_CLASS)
+inc/hw_ints.h(422): warning:  #47-D: incompatible redefinition of macro "INT_PWM1_2"  (declared at line 124 of ".\inc\tm4c123gh6pm.h")
+  #define INT_PWM1_2              INT_CONCAT(INT_PWM1_2_, INT_DEVICE_CLASS)
+inc/hw_ints.h(423): warning:  #47-D: incompatible redefinition of macro "INT_PWM1_3"  (declared at line 125 of ".\inc\tm4c123gh6pm.h")
+  #define INT_PWM1_3              INT_CONCAT(INT_PWM1_3_, INT_DEVICE_CLASS)
+inc/hw_ints.h(424): warning:  #47-D: incompatible redefinition of macro "INT_PWM1_FAULT"  (declared at line 126 of ".\inc\tm4c123gh6pm.h")
+  #define INT_PWM1_FAULT          INT_CONCAT(INT_PWM1_FAULT_, INT_DEVICE_CLASS)
+inc/hw_ints.h(425): warning:  #47-D: incompatible redefinition of macro "INT_QEI0"  (declared at line 61 of ".\inc\tm4c123gh6pm.h")
+  #define INT_QEI0                INT_CONCAT(INT_QEI0_, INT_DEVICE_CLASS)
+inc/hw_ints.h(426): warning:  #47-D: incompatible redefinition of macro "INT_QEI1"  (declared at line 84 of ".\inc\tm4c123gh6pm.h")
+  #define INT_QEI1                INT_CONCAT(INT_QEI1_, INT_DEVICE_CLASS)
+inc/hw_ints.h(428): warning:  #47-D: incompatible redefinition of macro "INT_SSI0"  (declared at line 55 of ".\inc\tm4c123gh6pm.h")
+  #define INT_SSI0                INT_CONCAT(INT_SSI0_, INT_DEVICE_CLASS)
+inc/hw_ints.h(429): warning:  #47-D: incompatible redefinition of macro "INT_SSI1"  (declared at line 80 of ".\inc\tm4c123gh6pm.h")
+  #define INT_SSI1                INT_CONCAT(INT_SSI1_, INT_DEVICE_CLASS)
+inc/hw_ints.h(430): warning:  #47-D: incompatible redefinition of macro "INT_SSI2"  (declared at line 96 of ".\inc\tm4c123gh6pm.h")
+  #define INT_SSI2                INT_CONCAT(INT_SSI2_, INT_DEVICE_CLASS)
+inc/hw_ints.h(431): warning:  #47-D: incompatible redefinition of macro "INT_SSI3"  (declared at line 97 of ".\inc\tm4c123gh6pm.h")
+  #define INT_SSI3                INT_CONCAT(INT_SSI3_, INT_DEVICE_CLASS)
+inc/hw_ints.h(432): warning:  #47-D: incompatible redefinition of macro "INT_SYSCTL"  (declared at line 75 of ".\inc\tm4c123gh6pm.h")
+  #define INT_SYSCTL              INT_CONCAT(INT_SYSCTL_, INT_DEVICE_CLASS)
+inc/hw_ints.h(433): warning:  #47-D: incompatible redefinition of macro "INT_SYSEXC"  (declared at line 121 of ".\inc\tm4c123gh6pm.h")
+  #define INT_SYSEXC              INT_CONCAT(INT_SYSEXC_, INT_DEVICE_CLASS)
+inc/hw_ints.h(435): warning:  #47-D: incompatible redefinition of macro "INT_TIMER0A"  (declared at line 67 of ".\inc\tm4c123gh6pm.h")
+  #define INT_TIMER0A             INT_CONCAT(INT_TIMER0A_, INT_DEVICE_CLASS)
+inc/hw_ints.h(436): warning:  #47-D: incompatible redefinition of macro "INT_TIMER0B"  (declared at line 68 of ".\inc\tm4c123gh6pm.h")
+  #define INT_TIMER0B             INT_CONCAT(INT_TIMER0B_, INT_DEVICE_CLASS)
+inc/hw_ints.h(437): warning:  #47-D: incompatible redefinition of macro "INT_TIMER1A"  (declared at line 69 of ".\inc\tm4c123gh6pm.h")
+  #define INT_TIMER1A             INT_CONCAT(INT_TIMER1A_, INT_DEVICE_CLASS)
+inc/hw_ints.h(438): warning:  #47-D: incompatible redefinition of macro "INT_TIMER1B"  (declared at line 70 of ".\inc\tm4c123gh6pm.h")
+  #define INT_TIMER1B             INT_CONCAT(INT_TIMER1B_, INT_DEVICE_CLASS)
+inc/hw_ints.h(439): warning:  #47-D: incompatible redefinition of macro "INT_TIMER2A"  (declared at line 71 of ".\inc\tm4c123gh6pm.h")
+  #define INT_TIMER2A             INT_CONCAT(INT_TIMER2A_, INT_DEVICE_CLASS)
+inc/hw_ints.h(440): warning:  #47-D: incompatible redefinition of macro "INT_TIMER2B"  (declared at line 72 of ".\inc\tm4c123gh6pm.h")
+  #define INT_TIMER2B             INT_CONCAT(INT_TIMER2B_, INT_DEVICE_CLASS)
+inc/hw_ints.h(441): warning:  #47-D: incompatible redefinition of macro "INT_TIMER3A"  (declared at line 81 of ".\inc\tm4c123gh6pm.h")
+  #define INT_TIMER3A             INT_CONCAT(INT_TIMER3A_, INT_DEVICE_CLASS)
+inc/hw_ints.h(442): warning:  #47-D: incompatible redefinition of macro "INT_TIMER3B"  (declared at line 82 of ".\inc\tm4c123gh6pm.h")
+  #define INT_TIMER3B             INT_CONCAT(INT_TIMER3B_, INT_DEVICE_CLASS)
+inc/hw_ints.h(443): warning:  #47-D: incompatible redefinition of macro "INT_TIMER4A"  (declared at line 105 of ".\inc\tm4c123gh6pm.h")
+  #define INT_TIMER4A             INT_CONCAT(INT_TIMER4A_, INT_DEVICE_CLASS)
+inc/hw_ints.h(444): warning:  #47-D: incompatible redefinition of macro "INT_TIMER4B"  (declared at line 106 of ".\inc\tm4c123gh6pm.h")
+  #define INT_TIMER4B             INT_CONCAT(INT_TIMER4B_, INT_DEVICE_CLASS)
+inc/hw_ints.h(445): warning:  #47-D: incompatible redefinition of macro "INT_TIMER5A"  (declared at line 107 of ".\inc\tm4c123gh6pm.h")
+  #define INT_TIMER5A             INT_CONCAT(INT_TIMER5A_, INT_DEVICE_CLASS)
+inc/hw_ints.h(446): warning:  #47-D: incompatible redefinition of macro "INT_TIMER5B"  (declared at line 108 of ".\inc\tm4c123gh6pm.h")
+  #define INT_TIMER5B             INT_CONCAT(INT_TIMER5B_, INT_DEVICE_CLASS)
+inc/hw_ints.h(451): warning:  #47-D: incompatible redefinition of macro "INT_UART0"  (declared at line 53 of ".\inc\tm4c123gh6pm.h")
+  #define INT_UART0               INT_CONCAT(INT_UART0_, INT_DEVICE_CLASS)
+inc/hw_ints.h(452): warning:  #47-D: incompatible redefinition of macro "INT_UART1"  (declared at line 54 of ".\inc\tm4c123gh6pm.h")
+  #define INT_UART1               INT_CONCAT(INT_UART1_, INT_DEVICE_CLASS)
+inc/hw_ints.h(453): warning:  #47-D: incompatible redefinition of macro "INT_UART2"  (declared at line 79 of ".\inc\tm4c123gh6pm.h")
+  #define INT_UART2               INT_CONCAT(INT_UART2_, INT_DEVICE_CLASS)
+inc/hw_ints.h(454): warning:  #47-D: incompatible redefinition of macro "INT_UART3"  (declared at line 98 of ".\inc\tm4c123gh6pm.h")
+  #define INT_UART3               INT_CONCAT(INT_UART3_, INT_DEVICE_CLASS)
+inc/hw_ints.h(455): warning:  #47-D: incompatible redefinition of macro "INT_UART4"  (declared at line 99 of ".\inc\tm4c123gh6pm.h")
+  #define INT_UART4               INT_CONCAT(INT_UART4_, INT_DEVICE_CLASS)
+inc/hw_ints.h(456): warning:  #47-D: incompatible redefinition of macro "INT_UART5"  (declared at line 100 of ".\inc\tm4c123gh6pm.h")
+  #define INT_UART5               INT_CONCAT(INT_UART5_, INT_DEVICE_CLASS)
+inc/hw_ints.h(457): warning:  #47-D: incompatible redefinition of macro "INT_UART6"  (declared at line 101 of ".\inc\tm4c123gh6pm.h")
+  #define INT_UART6               INT_CONCAT(INT_UART6_, INT_DEVICE_CLASS)
+inc/hw_ints.h(458): warning:  #47-D: incompatible redefinition of macro "INT_UART7"  (declared at line 102 of ".\inc\tm4c123gh6pm.h")
+  #define INT_UART7               INT_CONCAT(INT_UART7_, INT_DEVICE_CLASS)
+inc/hw_ints.h(459): warning:  #47-D: incompatible redefinition of macro "INT_UDMA"  (declared at line 90 of ".\inc\tm4c123gh6pm.h")
+  #define INT_UDMA                INT_CONCAT(INT_UDMA_, INT_DEVICE_CLASS)
+inc/hw_ints.h(460): warning:  #47-D: incompatible redefinition of macro "INT_UDMAERR"  (declared at line 91 of ".\inc\tm4c123gh6pm.h")
+  #define INT_UDMAERR             INT_CONCAT(INT_UDMAERR_, INT_DEVICE_CLASS)
+inc/hw_ints.h(461): warning:  #47-D: incompatible redefinition of macro "INT_USB0"  (declared at line 88 of ".\inc\tm4c123gh6pm.h")
+  #define INT_USB0                INT_CONCAT(INT_USB0_, INT_DEVICE_CLASS)
+inc/hw_ints.h(462): warning:  #47-D: incompatible redefinition of macro "INT_WATCHDOG"  (declared at line 66 of ".\inc\tm4c123gh6pm.h")
+  #define INT_WATCHDOG            INT_CONCAT(INT_WATCHDOG_, INT_DEVICE_CLASS)
+inc/hw_ints.h(463): warning:  #47-D: incompatible redefinition of macro "INT_WTIMER0A"  (declared at line 109 of ".\inc\tm4c123gh6pm.h")
+  #define INT_WTIMER0A            INT_CONCAT(INT_WTIMER0A_, INT_DEVICE_CLASS)
+inc/hw_ints.h(464): warning:  #47-D: incompatible redefinition of macro "INT_WTIMER0B"  (declared at line 110 of ".\inc\tm4c123gh6pm.h")
+  #define INT_WTIMER0B            INT_CONCAT(INT_WTIMER0B_, INT_DEVICE_CLASS)
+inc/hw_ints.h(465): warning:  #47-D: incompatible redefinition of macro "INT_WTIMER1A"  (declared at line 111 of ".\inc\tm4c123gh6pm.h")
+  #define INT_WTIMER1A            INT_CONCAT(INT_WTIMER1A_, INT_DEVICE_CLASS)
+inc/hw_ints.h(466): warning:  #47-D: incompatible redefinition of macro "INT_WTIMER1B"  (declared at line 112 of ".\inc\tm4c123gh6pm.h")
+  #define INT_WTIMER1B            INT_CONCAT(INT_WTIMER1B_, INT_DEVICE_CLASS)
+inc/hw_ints.h(467): warning:  #47-D: incompatible redefinition of macro "INT_WTIMER2A"  (declared at line 113 of ".\inc\tm4c123gh6pm.h")
+  #define INT_WTIMER2A            INT_CONCAT(INT_WTIMER2A_, INT_DEVICE_CLASS)
+inc/hw_ints.h(468): warning:  #47-D: incompatible redefinition of macro "INT_WTIMER2B"  (declared at line 114 of ".\inc\tm4c123gh6pm.h")
+  #define INT_WTIMER2B            INT_CONCAT(INT_WTIMER2B_, INT_DEVICE_CLASS)
+inc/hw_ints.h(469): warning:  #47-D: incompatible redefinition of macro "INT_WTIMER3A"  (declared at line 115 of ".\inc\tm4c123gh6pm.h")
+  #define INT_WTIMER3A            INT_CONCAT(INT_WTIMER3A_, INT_DEVICE_CLASS)
+inc/hw_ints.h(470): warning:  #47-D: incompatible redefinition of macro "INT_WTIMER3B"  (declared at line 116 of ".\inc\tm4c123gh6pm.h")
+  #define INT_WTIMER3B            INT_CONCAT(INT_WTIMER3B_, INT_DEVICE_CLASS)
+inc/hw_ints.h(471): warning:  #47-D: incompatible redefinition of macro "INT_WTIMER4A"  (declared at line 117 of ".\inc\tm4c123gh6pm.h")
+  #define INT_WTIMER4A            INT_CONCAT(INT_WTIMER4A_, INT_DEVICE_CLASS)
+inc/hw_ints.h(472): warning:  #47-D: incompatible redefinition of macro "INT_WTIMER4B"  (declared at line 118 of ".\inc\tm4c123gh6pm.h")
+  #define INT_WTIMER4B            INT_CONCAT(INT_WTIMER4B_, INT_DEVICE_CLASS)
+inc/hw_ints.h(473): warning:  #47-D: incompatible redefinition of macro "INT_WTIMER5A"  (declared at line 119 of ".\inc\tm4c123gh6pm.h")
+  #define INT_WTIMER5A            INT_CONCAT(INT_WTIMER5A_, INT_DEVICE_CLASS)
+inc/hw_ints.h(474): warning:  #47-D: incompatible redefinition of macro "INT_WTIMER5B"  (declared at line 120 of ".\inc\tm4c123gh6pm.h")
+  #define INT_WTIMER5B            INT_CONCAT(INT_WTIMER5B_, INT_DEVICE_CLASS)
+Systic.h(129): warning:  #1-D: last line of file ends without a newline
+  #endif // __DRIVERLIB_SYSTICK_H__
+Systic.c: 83 warnings, 0 errors
+creating preprocessor file for GPIO_init.c...
+creating preprocessor file for CAN.c...
+compiling GPIO_init.c...
+driverlib/hibernate.h(229): warning:  #231-D: declaration is not visible outside of function
+  extern void HibernateCalendarSet(struct tm *psTime);
+driverlib/hibernate.h(230): warning:  #231-D: declaration is not visible outside of function
+  extern int HibernateCalendarGet(struct tm *psTime);
+driverlib/hibernate.h(231): warning:  #231-D: declaration is not visible outside of function
+  extern void HibernateCalendarMatchSet(uint32_t ui32Index, struct tm *psTime);
+driverlib/hibernate.h(232): warning:  #231-D: declaration is not visible outside of function
+  extern void HibernateCalendarMatchGet(uint32_t ui32Index, struct tm *psTime);
+GPIO_init.c: 4 warnings, 0 errors
+compiling CAN.c...
+driverlib/hibernate.h(229): warning:  #231-D: declaration is not visible outside of function
+  extern void HibernateCalendarSet(struct tm *psTime);
+driverlib/hibernate.h(230): warning:  #231-D: declaration is not visible outside of function
+  extern int HibernateCalendarGet(struct tm *psTime);
+driverlib/hibernate.h(231): warning:  #231-D: declaration is not visible outside of function
+  extern void HibernateCalendarMatchSet(uint32_t ui32Index, struct tm *psTime);
+driverlib/hibernate.h(232): warning:  #231-D: declaration is not visible outside of function
+  extern void HibernateCalendarMatchGet(uint32_t ui32Index, struct tm *psTime);
+.\inc\tm4c123gh6pm.h(48): warning:  #47-D: incompatible redefinition of macro "INT_GPIOA"  (declared at line 370 of "inc/hw_ints.h")
+  #define INT_GPIOA               16          
+/ GPIO Port A
+.\inc\tm4c123gh6pm.h(49): warning:  #47-D: incompatible redefinition of macro "INT_GPIOB"  (declared at line 371 of "inc/hw_ints.h")
+  #define INT_GPIOB               17          
+/ GPIO Port B
+.\inc\tm4c123gh6pm.h(50): warning:  #47-D: incompatible redefinition of macro "INT_GPIOC"  (declared at line 372 of "inc/hw_ints.h")
+  #define INT_GPIOC               18          
+/ GPIO Port C
+.\inc\tm4c123gh6pm.h(51): warning:  #47-D: incompatible redefinition of macro "INT_GPIOD"  (declared at line 373 of "inc/hw_ints.h")
+  #define INT_GPIOD               19          
+/ GPIO Port D
+.\inc\tm4c123gh6pm.h(52): warning:  #47-D: incompatible redefinition of macro "INT_GPIOE"  (declared at line 374 of "inc/hw_ints.h")
+  #define INT_GPIOE               20          
+/ GPIO Port E
+.\inc\tm4c123gh6pm.h(53): warning:  #47-D: incompatible redefinition of macro "INT_UART0"  (declared at line 451 of "inc/hw_ints.h")
+  #define INT_UART0               21          
+/ UART0
+.\inc\tm4c123gh6pm.h(54): warning:  #47-D: incompatible redefinition of macro "INT_UART1"  (declared at line 452 of "inc/hw_ints.h")
+  #define INT_UART1               22          
+/ UART1
+.\inc\tm4c123gh6pm.h(55): warning:  #47-D: incompatible redefinition of macro "INT_SSI0"  (declared at line 428 of "inc/hw_ints.h")
+  #define INT_SSI0                23          
+/ SSI0
+.\inc\tm4c123gh6pm.h(56): warning:  #47-D: incompatible redefinition of macro "INT_I2C0"  (declared at line 403 of "inc/hw_ints.h")
+  #define INT_I2C0                24          
+/ I2C0
+.\inc\tm4c123gh6pm.h(57): warning:  #47-D: incompatible redefinition of macro "INT_PWM0_FAULT"  (declared at line 419 of "inc/hw_ints.h")
+  #define INT_PWM0_FAULT          25          
+/ PWM0 Fault
+.\inc\tm4c123gh6pm.h(58): warning:  #47-D: incompatible redefinition of macro "INT_PWM0_0"  (declared at line 415 of "inc/hw_ints.h")
+  #define INT_PWM0_0              26          
+/ PWM0 Generator 0
+.\inc\tm4c123gh6pm.h(59): warning:  #47-D: incompatible redefinition of macro "INT_PWM0_1"  (declared at line 416 of "inc/hw_ints.h")
+  #define INT_PWM0_1              27          
+/ PWM0 Generator 1
+.\inc\tm4c123gh6pm.h(60): warning:  #47-D: incompatible redefinition of macro "INT_PWM0_2"  (declared at line 417 of "inc/hw_ints.h")
+  #define INT_PWM0_2              28          
+/ PWM0 Generator 2
+.\inc\tm4c123gh6pm.h(61): warning:  #47-D: incompatible redefinition of macro "INT_QEI0"  (declared at line 425 of "inc/hw_ints.h")
+  #define INT_QEI0                29          
+/ QEI0
+.\inc\tm4c123gh6pm.h(62): warning:  #47-D: incompatible redefinition of macro "INT_ADC0SS0"  (declared at line 352 of "inc/hw_ints.h")
+  #define INT_ADC0SS0             30          
+/ ADC0 Sequence 0
+.\inc\tm4c123gh6pm.h(63): warning:  #47-D: incompatible redefinition of macro "INT_ADC0SS1"  (declared at line 353 of "inc/hw_ints.h")
+  #define INT_ADC0SS1             31          
+/ ADC0 Sequence 1
+.\inc\tm4c123gh6pm.h(64): warning:  #47-D: incompatible redefinition of macro "INT_ADC0SS2"  (declared at line 354 of "inc/hw_ints.h")
+  #define INT_ADC0SS2             32          
+/ ADC0 Sequence 2
+.\inc\tm4c123gh6pm.h(65): warning:  #47-D: incompatible redefinition of macro "INT_ADC0SS3"  (declared at line 355 of "inc/hw_ints.h")
+  #define INT_ADC0SS3             33          
+/ ADC0 Sequence 3
+.\inc\tm4c123gh6pm.h(66): warning:  #47-D: incompatible redefinition of macro "INT_WATCHDOG"  (declared at line 462 of "inc/hw_ints.h")
+  #define INT_WATCHDOG            34          
+/ Watchdog Timers 0 and 1
+.\inc\tm4c123gh6pm.h(67): warning:  #47-D: incompatible redefinition of macro "INT_TIMER0A"  (declared at line 435 of "inc/hw_ints.h")
+  #define INT_TIMER0A             35          
+/ 16/32-Bit Timer 0A
+.\inc\tm4c123gh6pm.h(68): warning:  #47-D: incompatible redefinition of macro "INT_TIMER0B"  (declared at line 436 of "inc/hw_ints.h")
+  #define INT_TIMER0B             36          
+/ 16/32-Bit Timer 0B
+.\inc\tm4c123gh6pm.h(69): warning:  #47-D: incompatible redefinition of macro "INT_TIMER1A"  (declared at line 437 of "inc/hw_ints.h")
+  #define INT_TIMER1A             37          
+/ 16/32-Bit Timer 1A
+.\inc\tm4c123gh6pm.h(70): warning:  #47-D: incompatible redefinition of macro "INT_TIMER1B"  (declared at line 438 of "inc/hw_ints.h")
+  #define INT_TIMER1B             38          
+/ 16/32-Bit Timer 1B
+.\inc\tm4c123gh6pm.h(71): warning:  #47-D: incompatible redefinition of macro "INT_TIMER2A"  (declared at line 439 of "inc/hw_ints.h")
+  #define INT_TIMER2A             39          
+/ 16/32-Bit Timer 2A
+.\inc\tm4c123gh6pm.h(72): warning:  #47-D: incompatible redefinition of macro "INT_TIMER2B"  (declared at line 440 of "inc/hw_ints.h")
+  #define INT_TIMER2B             40          
+/ 16/32-Bit Timer 2B
+.\inc\tm4c123gh6pm.h(73): warning:  #47-D: incompatible redefinition of macro "INT_COMP0"  (declared at line 363 of "inc/hw_ints.h")
+  #define INT_COMP0               41          
+/ Analog Comparator 0
+.\inc\tm4c123gh6pm.h(74): warning:  #47-D: incompatible redefinition of macro "INT_COMP1"  (declared at line 364 of "inc/hw_ints.h")
+  #define INT_COMP1               42          
+/ Analog Comparator 1
+.\inc\tm4c123gh6pm.h(75): warning:  #47-D: incompatible redefinition of macro "INT_SYSCTL"  (declared at line 432 of "inc/hw_ints.h")
+  #define INT_SYSCTL              44          
+/ System Control
+.\inc\tm4c123gh6pm.h(76): warning:  #47-D: incompatible redefinition of macro "INT_FLASH"  (declared at line 369 of "inc/hw_ints.h")
+  #define INT_FLASH               45          
+/ Flash Memory Control and EEPROM
+.\inc\tm4c123gh6pm.h(78): warning:  #47-D: incompatible redefinition of macro "INT_GPIOF"  (declared at line 375 of "inc/hw_ints.h")
+  #define INT_GPIOF               46          
+/ GPIO Port F
+.\inc\tm4c123gh6pm.h(79): warning:  #47-D: incompatible redefinition of macro "INT_UART2"  (declared at line 453 of "inc/hw_ints.h")
+  #define INT_UART2               49          
+/ UART2
+.\inc\tm4c123gh6pm.h(80): warning:  #47-D: incompatible redefinition of macro "INT_SSI1"  (declared at line 429 of "inc/hw_ints.h")
+  #define INT_SSI1                50          
+/ SSI1
+.\inc\tm4c123gh6pm.h(81): warning:  #47-D: incompatible redefinition of macro "INT_TIMER3A"  (declared at line 441 of "inc/hw_ints.h")
+  #define INT_TIMER3A             51          
+/ 16/32-Bit Timer 3A
+.\inc\tm4c123gh6pm.h(82): warning:  #47-D: incompatible redefinition of macro "INT_TIMER3B"  (declared at line 442 of "inc/hw_ints.h")
+  #define INT_TIMER3B             52          
+/ Timer 3B
+.\inc\tm4c123gh6pm.h(83): warning:  #47-D: incompatible redefinition of macro "INT_I2C1"  (declared at line 404 of "inc/hw_ints.h")
+  #define INT_I2C1                53          
+/ I2C1
+.\inc\tm4c123gh6pm.h(84): warning:  #47-D: incompatible redefinition of macro "INT_QEI1"  (declared at line 426 of "inc/hw_ints.h")
+  #define INT_QEI1                54          
+/ QEI1
+.\inc\tm4c123gh6pm.h(85): warning:  #47-D: incompatible redefinition of macro "INT_CAN0"  (declared at line 361 of "inc/hw_ints.h")
+  #define INT_CAN0                55          
+/ CAN0
+.\inc\tm4c123gh6pm.h(86): warning:  #47-D: incompatible redefinition of macro "INT_CAN1"  (declared at line 362 of "inc/hw_ints.h")
+  #define INT_CAN1                56          
+/ CAN1
+.\inc\tm4c123gh6pm.h(87): warning:  #47-D: incompatible redefinition of macro "INT_HIBERNATE"  (declared at line 402 of "inc/hw_ints.h")
+  #define INT_HIBERNATE           59          
+/ Hibernation Module
+.\inc\tm4c123gh6pm.h(88): warning:  #47-D: incompatible redefinition of macro "INT_USB0"  (declared at line 461 of "inc/hw_ints.h")
+  #define INT_USB0                60          
+/ USB
+.\inc\tm4c123gh6pm.h(89): warning:  #47-D: incompatible redefinition of macro "INT_PWM0_3"  (declared at line 418 of "inc/hw_ints.h")
+  #define INT_PWM0_3              61          
+/ PWM Generator 3
+.\inc\tm4c123gh6pm.h(90): warning:  #47-D: incompatible redefinition of macro "INT_UDMA"  (declared at line 459 of "inc/hw_ints.h")
+  #define INT_UDMA                62          
+/ uDMA Software
+.\inc\tm4c123gh6pm.h(91): warning:  #47-D: incompatible redefinition of macro "INT_UDMAERR"  (declared at line 460 of "inc/hw_ints.h")
+  #define INT_UDMAERR             63          
+/ uDMA Error
+.\inc\tm4c123gh6pm.h(92): warning:  #47-D: incompatible redefinition of macro "INT_ADC1SS0"  (declared at line 356 of "inc/hw_ints.h")
+  #define INT_ADC1SS0             64          
+/ ADC1 Sequence 0
+.\inc\tm4c123gh6pm.h(93): warning:  #47-D: incompatible redefinition of macro "INT_ADC1SS1"  (declared at line 357 of "inc/hw_ints.h")
+  #define INT_ADC1SS1             65          
+/ ADC1 Sequence 1
+.\inc\tm4c123gh6pm.h(94): warning:  #47-D: incompatible redefinition of macro "INT_ADC1SS2"  (declared at line 358 of "inc/hw_ints.h")
+  #define INT_ADC1SS2             66          
+/ ADC1 Sequence 2
+.\inc\tm4c123gh6pm.h(95): warning:  #47-D: incompatible redefinition of macro "INT_ADC1SS3"  (declared at line 359 of "inc/hw_ints.h")
+  #define INT_ADC1SS3             67          
+/ ADC1 Sequence 3
+.\inc\tm4c123gh6pm.h(96): warning:  #47-D: incompatible redefinition of macro "INT_SSI2"  (declared at line 430 of "inc/hw_ints.h")
+  #define INT_SSI2                73          
+/ SSI2
+.\inc\tm4c123gh6pm.h(97): warning:  #47-D: incompatible redefinition of macro "INT_SSI3"  (declared at line 431 of "inc/hw_ints.h")
+  #define INT_SSI3                74          
+/ SSI3
+.\inc\tm4c123gh6pm.h(98): warning:  #47-D: incompatible redefinition of macro "INT_UART3"  (declared at line 454 of "inc/hw_ints.h")
+  #define INT_UART3               75          
+/ UART3
+.\inc\tm4c123gh6pm.h(99): warning:  #47-D: incompatible redefinition of macro "INT_UART4"  (declared at line 455 of "inc/hw_ints.h")
+  #define INT_UART4               76          
+/ UART4
+.\inc\tm4c123gh6pm.h(100): warning:  #47-D: incompatible redefinition of macro "INT_UART5"  (declared at line 456 of "inc/hw_ints.h")
+  #define INT_UART5               77          
+/ UART5
+.\inc\tm4c123gh6pm.h(101): warning:  #47-D: incompatible redefinition of macro "INT_UART6"  (declared at line 457 of "inc/hw_ints.h")
+  #define INT_UART6               78          
+/ UART6
+.\inc\tm4c123gh6pm.h(102): warning:  #47-D: incompatible redefinition of macro "INT_UART7"  (declared at line 458 of "inc/hw_ints.h")
+  #define INT_UART7               79          
+/ UART7
+.\inc\tm4c123gh6pm.h(103): warning:  #47-D: incompatible redefinition of macro "INT_I2C2"  (declared at line 405 of "inc/hw_ints.h")
+  #define INT_I2C2                84          
+/ I2C2
+.\inc\tm4c123gh6pm.h(104): warning:  #47-D: incompatible redefinition of macro "INT_I2C3"  (declared at line 406 of "inc/hw_ints.h")
+  #define INT_I2C3                85          
+/ I2C3
+.\inc\tm4c123gh6pm.h(105): warning:  #47-D: incompatible redefinition of macro "INT_TIMER4A"  (declared at line 443 of "inc/hw_ints.h")
+  #define INT_TIMER4A             86          
+/ 16/32-Bit Timer 4A
+.\inc\tm4c123gh6pm.h(106): warning:  #47-D: incompatible redefinition of macro "INT_TIMER4B"  (declared at line 444 of "inc/hw_ints.h")
+  #define INT_TIMER4B             87          
+/ 16/32-Bit Timer 4B
+.\inc\tm4c123gh6pm.h(107): warning:  #47-D: incompatible redefinition of macro "INT_TIMER5A"  (declared at line 445 of "inc/hw_ints.h")
+  #define INT_TIMER5A             108         
+/ 16/32-Bit Timer 5A
+.\inc\tm4c123gh6pm.h(108): warning:  #47-D: incompatible redefinition of macro "INT_TIMER5B"  (declared at line 446 of "inc/hw_ints.h")
+  #define INT_TIMER5B             109         
+/ 16/32-Bit Timer 5B
+.\inc\tm4c123gh6pm.h(109): warning:  #47-D: incompatible redefinition of macro "INT_WTIMER0A"  (declared at line 463 of "inc/hw_ints.h")
+  #define INT_WTIMER0A            110         
+/ 32/64-Bit Timer 0A
+.\inc\tm4c123gh6pm.h(110): warning:  #47-D: incompatible redefinition of macro "INT_WTIMER0B"  (declared at line 464 of "inc/hw_ints.h")
+  #define INT_WTIMER0B            111         
+/ 32/64-Bit Timer 0B
+.\inc\tm4c123gh6pm.h(111): warning:  #47-D: incompatible redefinition of macro "INT_WTIMER1A"  (declared at line 465 of "inc/hw_ints.h")
+  #define INT_WTIMER1A            112         
+/ 32/64-Bit Timer 1A
+.\inc\tm4c123gh6pm.h(112): warning:  #47-D: incompatible redefinition of macro "INT_WTIMER1B"  (declared at line 466 of "inc/hw_ints.h")
+  #define INT_WTIMER1B            113         
+/ 32/64-Bit Timer 1B
+.\inc\tm4c123gh6pm.h(113): warning:  #47-D: incompatible redefinition of macro "INT_WTIMER2A"  (declared at line 467 of "inc/hw_ints.h")
+  #define INT_WTIMER2A            114         
+/ 32/64-Bit Timer 2A
+.\inc\tm4c123gh6pm.h(114): warning:  #47-D: incompatible redefinition of macro "INT_WTIMER2B"  (declared at line 468 of "inc/hw_ints.h")
+  #define INT_WTIMER2B            115         
+/ 32/64-Bit Timer 2B
+.\inc\tm4c123gh6pm.h(115): warning:  #47-D: incompatible redefinition of macro "INT_WTIMER3A"  (declared at line 469 of "inc/hw_ints.h")
+  #define INT_WTIMER3A            116         
+/ 32/64-Bit Timer 3A
+.\inc\tm4c123gh6pm.h(116): warning:  #47-D: incompatible redefinition of macro "INT_WTIMER3B"  (declared at line 470 of "inc/hw_ints.h")
+  #define INT_WTIMER3B            117         
+/ 32/64-Bit Timer 3B
+.\inc\tm4c123gh6pm.h(117): warning:  #47-D: incompatible redefinition of macro "INT_WTIMER4A"  (declared at line 471 of "inc/hw_ints.h")
+  #define INT_WTIMER4A            118         
+/ 32/64-Bit Timer 4A
+.\inc\tm4c123gh6pm.h(118): warning:  #47-D: incompatible redefinition of macro "INT_WTIMER4B"  (declared at line 472 of "inc/hw_ints.h")
+  #define INT_WTIMER4B            119         
+/ 32/64-Bit Timer 4B
+.\inc\tm4c123gh6pm.h(119): warning:  #47-D: incompatible redefinition of macro "INT_WTIMER5A"  (declared at line 473 of "inc/hw_ints.h")
+  #define INT_WTIMER5A            120         
+/ 32/64-Bit Timer 5A
+.\inc\tm4c123gh6pm.h(120): warning:  #47-D: incompatible redefinition of macro "INT_WTIMER5B"  (declared at line 474 of "inc/hw_ints.h")
+  #define INT_WTIMER5B            121         
+/ 32/64-Bit Timer 5B
+.\inc\tm4c123gh6pm.h(121): warning:  #47-D: incompatible redefinition of macro "INT_SYSEXC"  (declared at line 433 of "inc/hw_ints.h")
+  #define INT_SYSEXC              122         
+/ System Exception (imprecise)
+.\inc\tm4c123gh6pm.h(122): warning:  #47-D: incompatible redefinition of macro "INT_PWM1_0"  (declared at line 420 of "inc/hw_ints.h")
+  #define INT_PWM1_0              150         
+/ PWM1 Generator 0
+.\inc\tm4c123gh6pm.h(123): warning:  #47-D: incompatible redefinition of macro "INT_PWM1_1"  (declared at line 421 of "inc/hw_ints.h")
+  #define INT_PWM1_1              151         
+/ PWM1 Generator 1
+.\inc\tm4c123gh6pm.h(124): warning:  #47-D: incompatible redefinition of macro "INT_PWM1_2"  (declared at line 422 of "inc/hw_ints.h")
+  #define INT_PWM1_2              152         
+/ PWM1 Generator 2
+.\inc\tm4c123gh6pm.h(125): warning:  #47-D: incompatible redefinition of macro "INT_PWM1_3"  (declared at line 423 of "inc/hw_ints.h")
+  #define INT_PWM1_3              153         
+/ PWM1 Generator 3
+.\inc\tm4c123gh6pm.h(126): warning:  #47-D: incompatible redefinition of macro "INT_PWM1_FAULT"  (declared at line 424 of "inc/hw_ints.h")
+  #define INT_PWM1_FAULT          154         
+/ PWM1 Fault
+CAN.c(192): warning:  #1-D: last line of file ends without a newline
+  }
+CAN.c: 83 warnings, 0 errors
+linking...
+Program Size: Code=7000 RO-data=1548 RW-data=1644 ZI-data=620  
+FromELF: creating hex file...
+After Build - User command #1: fromelf --bin --output .\rvmdk\project.bin .\rvmdk\project.axf
+".\rvmdk\project.axf" - 0 Error(s), 252 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.0.1.pack
+                ARM.CMSIS.5.0.1
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.0.1
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.TM4C_DFP.1.1.0.pack
+                Keil.TM4C_DFP.1.1.0
+                Texas Instruments Tiva C Series Device Support and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_project
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include
+  C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.0.1
+Build Time Elapsed:  00:00:06
+</pre>
+</body>
+</html>
